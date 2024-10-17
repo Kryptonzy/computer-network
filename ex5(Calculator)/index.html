@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Scientific Calculator with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+
+    <div class="calculator bg-gray-100 p-6 rounded-lg shadow-lg max-w-md w-full">
+        <!-- Display -->
+        <div id="display" class="bg-white text-right text-3xl text-gray-800 p-4 mb-4 rounded-lg overflow-x-auto">0</div>
+        
+        <!-- Buttons -->
+        <div class="grid grid-cols-7 gap-2">
+            <!-- First Row -->
+            <button class="button border border-gray-400">Rad</button>
+            <button class="button border border-gray-400">Deg</button>
+            <button class="button border border-gray-400">Inv</button>
+            <button class="button border border-gray-400">(</button>
+            <button class="button border border-gray-400">)</button>
+            <button class="button border border-gray-400">%</button>
+            <button id="clear" class="button bg-yellow-500 text-white hover:bg-yellow-600 border border-gray-400">AC</button>
+
+            <!-- Second Row -->
+            <button class="button border border-gray-400">x!</button>
+            <button class="button border border-gray-400">sin</button>
+            <button class="button border border-gray-400">cos</button>
+            <button class="button border border-gray-400">7</button>
+            <button class="button border border-gray-400">8</button>
+            <button class="button border border-gray-400">9</button>
+            <button class="button bg-gray-400 hover:bg-gray-500 border border-gray-400">÷</button>
+
+            <!-- Third Row -->
+            <button class="button border border-gray-400">π</button>
+            <button class="button border border-gray-400">tan</button>
+            <button class="button border border-gray-400">log</button>
+            <button class="button border border-gray-400">4</button>
+            <button class="button border border-gray-400">5</button>
+            <button class="button border border-gray-400">6</button>
+            <button class="button bg-gray-400 hover:bg-gray-500 border border-gray-400">×</button>
+
+            <!-- Fourth Row -->
+            <button class="button border border-gray-400">e</button>
+            <button class="button border border-gray-400">ln</button>
+            <button class="button border border-gray-400">&radic;</button>
+            <button class="button border border-gray-400">1</button>
+            <button class="button border border-gray-400">2</button>
+            <button class="button border border-gray-400">3</button>
+            <button class="button bg-gray-400 hover:bg-gray-500 border border-gray-400">-</button>
+
+            <!-- Fifth Row -->
+            <button class="button border border-gray-400">EXP</button>
+            <button class="button border border-gray-400">Ans</button>
+            <button class="button border border-gray-400">xʸ</button>
+            <button class="button border border-gray-400">0</button>
+            <button class="button border border-gray-400">.</button>
+            <button class="button bg-blue-500 text-white hover:bg-blue-600 border border-gray-400">=</button>
+            <button class="button bg-gray-400 hover:bg-gray-500 border border-gray-400">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
